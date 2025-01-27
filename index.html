@@ -1,0 +1,79 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Profile</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+  <style>
+    body {
+      font-family: Montserrat, sans-serif;
+      background-color: #4c56df;
+      color: #8898f2;
+    }
+    .container {
+      max-width: 300px;
+      margin: 50px auto;
+      padding: 50px;
+      background-color: #eff0f0;
+      border: 1px solid #3a3d41;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    
+    .logo {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 20px;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #3a3d41;
+      border-radius: 5px;
+      background-color: #0d1117;
+      color: #ffffff;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #6e7681;
+      color: #ffffff;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #8b949e;
+    }
+    a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="logo" src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook Logo">
+          <h2>Facebook</h2>
+          <input id="facebook-user" type="text" placeholder="Username"><br><br>
+    <button onclick="profile()">Check it</button>
+    <a id="ans" href="#" target="_blank"></a>
+  </div>
+  <script>
+    function profile() {
+      let input = document.getElementById("User");
+      let ans = document.getElementById("ans");
+      ans.href = "https://github.com/" + input.value;
+      ans.innerHTML = "View Profile";
+    }
+  </script>
+</body>
+</html>
+
+
